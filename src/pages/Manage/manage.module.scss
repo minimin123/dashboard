@@ -1,0 +1,24 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/mixins/flexbox';
+
+.manageWrap {
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    font-size: 26px;
+    font-weight: 900;
+  }
+
+  .manageHeader {
+    @include flexbox.flexbox(between, center);
+    margin-bottom: 40px;
+  }
+
+  .manageContents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 17px;
+    column-gap: 17px;
+  }
+}

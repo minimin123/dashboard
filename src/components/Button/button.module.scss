@@ -1,0 +1,18 @@
+@use '/src/styles/constants/colors';
+
+.button {
+  width: 92px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid colors.$GRAY100;
+  border-radius: 10px;
+
+  &.createBtn {
+    width: 108px;
+    font-size: 14px;
+    font-weight: 700;
+    color: colors.$WHITE;
+    background-color: colors.$PRIMARY;
+    border: none;
+  }
+}
